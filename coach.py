@@ -62,7 +62,7 @@ james = get_coach_data("james2.txt")
 julie = get_coach_data("julie2.txt")
 mikey = get_coach_data("mikey2.txt")
 sarah = get_coach_data("sarah2.txt")
-'''
+
 (sarah_name, sarah_dob) = sarah.pop(0), sarah.pop(0)
 print(sarah_name, sarah_dob, sorted(set([sanitize(line) for line in sarah]))[0:3])
 
@@ -70,6 +70,8 @@ print(sorted(set([sanitize(line) for line in james]))[0:3])
 print(sorted(set([sanitize(line) for line in julie]))[0:3])
 print(sorted(set([sanitize(line) for line in mikey]))[0:3])
 print(sorted(set([sanitize(line) for line in sarah]))[0:3])
+'''
+
 
 james = Athlete().get_coach_data('james2.txt')
 print(james.name, james.times)
